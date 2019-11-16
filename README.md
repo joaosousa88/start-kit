@@ -3,6 +3,7 @@ This project was bootstrapped with:
 - Create React App
 - ESLint
 - Prettier
+- React Testing Library
 
 ## Available Scripts
 
