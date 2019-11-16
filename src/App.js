@@ -1,6 +1,12 @@
 import React from 'react';
 import logo from './logo.svg';
+import styled from '@emotion/styled';
+
 import './App.css';
+
+const Button = styled.button`
+  color: pink;
+`;
 
 function App() {
   return (
@@ -18,6 +24,7 @@ function App() {
         >
           Learn React
         </a>
+        <Button>hello</Button>
       </header>
     </div>
   );
