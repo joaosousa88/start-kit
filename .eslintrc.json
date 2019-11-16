@@ -1,11 +1,26 @@
 {
-  "extends": ["airbnb", "plugin:prettier/recommended", "prettier/react"],
+  "extends": [
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "plugin:prettier/recommended",
+    "prettier/react"
+  ],
   "env": {
     "browser": true,
     "commonjs": true,
     "es6": true,
     "jest": true,
     "node": true
+  },
+  "parser": "babel-eslint",
+  "parserOptions": {
+    "ecmaVersion": 2018,
+    "sourceType": "module"
+  },
+  "ecmaFeatures": {
+    "modules": true,
+    "spread": true,
+    "restParams": true
   },
   "rules": {
     "jsx-a11y/href-no-hash": ["off"],
@@ -23,10 +38,6 @@
         "ignoreTemplateLiterals": true,
         "ignoreRegExpLiterals": true
       }
-    ],
-    "import/no-extraneous-dependencies": [
-      "error",
-      { "devDependencies": true, "optionalDependencies": false, "peerDependencies": false }
     ]
   }
 }
